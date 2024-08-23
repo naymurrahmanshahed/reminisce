@@ -2,8 +2,10 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSmoothHorizontalScroll } from "../Hook/useSmoothScroll";
 
 const Featured = () => {
+  useSmoothHorizontalScroll();
   const featuredRefs = useRef([]);
 
   const containerRef = useRef();
@@ -70,7 +72,7 @@ const Featured = () => {
               />
             </div>
             <div className="featured-content flex flex-col w-[40%]">
-              <h3 className="text-[2vw]">{item.title}</h3>
+              <h3 className="text-[3vw]">{item.title}</h3>
               <Link className="border-b-4 w-[14rem]">Explore More</Link>
             </div>
           </div>

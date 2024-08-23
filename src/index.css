@@ -73,3 +73,30 @@ body {
   grid-column: 4;
   grid-row: 1;
 }
+
+.image-container-left {
+  position: relative;
+}
+
+.image-container-left::before {
+  content: "";
+  top: -1rem;
+  right: -1.5rem;
+  position: absolute;
+  @apply bg-primary;
+  height: 115%;
+  width: 0.2rem;
+}
+.image-container-right {
+  position: relative;
+}
+
+.image-container-right::before {
+  content: "";
+  top: -1rem;
+  left: -1.5rem;
+  position: absolute;
+  @apply bg-primary;
+  height: 115%;
+  width: 0.2rem;
+}
