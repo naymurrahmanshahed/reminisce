@@ -25,6 +25,8 @@ const Featured = () => {
 
   const containerRef = useRef();
 
+  console.log(containerRef);
+
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {

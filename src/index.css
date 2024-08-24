@@ -49,13 +49,37 @@ body {
 }
 
 .photo {
+  position: relative;
   width: 100%;
   height: 100%;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   overflow: hidden;
   transform: rotate(-10deg);
+  transition: all 300ms;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(213, 63, 65, 0.5);
+  z-index: 1;
+  transition: all 300ms;
+}
+.photo:hover {
+  transform: rotate(0deg);
+}
+
+.photo:hover::before {
+  width: 0%;
+  cursor: pointer;
 }
 
 .one {
