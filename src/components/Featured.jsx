@@ -2,10 +2,25 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useSmoothHorizontalScroll } from "../Hook/useSmoothScroll";
-
+const featuredSection = [
+  {
+    id: 1,
+    imgurl: `../../images/featured-1.webp`,
+    title: "Hands Holding Polaroid Photo",
+  },
+  {
+    id: 2,
+    imgurl: `../../images/featured-2.jpg`,
+    title: "Person Developing Film in a Dark Room ",
+  },
+  {
+    id: 3,
+    imgurl: `../../images/featured-3.webp`,
+    title:
+      "Retro photo camera and vintage telephone placed on wooden bedside table",
+  },
+];
 const Featured = () => {
-  useSmoothHorizontalScroll();
   const featuredRefs = useRef([]);
 
   const containerRef = useRef();
@@ -29,25 +44,6 @@ const Featured = () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, []);
-
-  const featuredSection = [
-    {
-      id: 1,
-      imgurl: `../../images/featured-1.webp`,
-      title: "Hands Holding Polaroid Photo",
-    },
-    {
-      id: 2,
-      imgurl: `../../images/featured-2.jpg`,
-      title: "Person Developing Film in a Dark Room ",
-    },
-    {
-      id: 3,
-      imgurl: `../../images/featured-3.webp`,
-      title:
-        "Retro photo camera and vintage telephone placed on wooden bedside table",
-    },
-  ];
 
   return (
     <section

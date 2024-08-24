@@ -80,11 +80,11 @@ body {
 
 .image-container-left::before {
   content: "";
-  top: -1rem;
+  top: 0rem;
   right: -1.5rem;
   position: absolute;
   @apply bg-primary;
-  height: 115%;
+  height: 100%;
   width: 0.2rem;
 }
 .image-container-right {
@@ -93,11 +93,11 @@ body {
 
 .image-container-right::before {
   content: "";
-  top: -1rem;
+  top: 0rem;
   left: -1.5rem;
   position: absolute;
   @apply bg-primary;
-  height: 115%;
+  height: 100%;
   width: 0.2rem;
 }
 
@@ -115,9 +115,9 @@ body {
     "  img5  img5  img5    .    . img3  img3  img3  img10 img10 img10  img10"
     "  img5  img5  img5 img7 img7 img7  img8  img8  img10  img10 img10 img10"
     "  img5  img5  img5 img7 img7 img7  img8  img8  img10  img10 img10 img10"
-    "  img6  img6 img6 img7 img7 img7   img8  img8  img10  img10 img10 img10"
-    "  img6  img6 img6 img7 img7 img7   img9  img9  img10  img10 img10 img10"
-    "  img6  img6 img6 img7 img7 img7   img9  img9  img10  img10 img10 img10";
+    "  img6  img6  img6 img7 img7 img7  img8  img8  img10  img10 img10 img10"
+    "  img6  img6  img6 img7 img7 img7  img9  img9  img10  img10 img10 img10"
+    "  img6  img6  img6 img7 img7 img7  img9  img9  img10  img10 img10 img10";
   gap: 1rem;
   padding: 0.75rem 0rem;
 }
