@@ -36,6 +36,28 @@ body {
   width: 120%;
 }
 
+.magic {
+  position: relative;
+}
+.wonder {
+  position: relative;
+}
+.discovery {
+  position: relative;
+}
+.wonder span,
+.discovery span,
+.magic span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 400%;
+  height: 100%;
+  @apply bg-lighter;
+}
+
 .photos {
   position: absolute;
   top: 0;
@@ -101,7 +123,30 @@ body {
 .image-container-left {
   position: relative;
 }
-
+.about-shutter-left,
+.about-shutter-right {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  @apply bg-lighter;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.about-content-left-shutter,
+.about-content-right-shutter {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  @apply bg-lighter;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .image-container-left::before {
   content: "";
   top: 0rem;
