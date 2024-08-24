@@ -3,7 +3,7 @@ const About = () => {
     <section className="min-h-screen container mx-auto py-10">
       <div className=" flex flex-col  ">
         <div className="about-container flex gap-10 justify-between  border-t-4 border-b-4 border-b-primary py-4 border-t-primary">
-          <div className="image-container-left w-[30%] h-[15rem]">
+          <div className="image-container-left w-[30%] h-[15rem] 2xl:h-[22rem]">
             <img
               src="../../images/about-1.webp"
               className="w-full h-full object-cover"
@@ -26,7 +26,7 @@ const About = () => {
             dawn to the setting sun, our childhood was a canvas painted with
             laughter, mischief, and endless adventures.
           </p>
-          <div className="image-container-right  w-[30%]  h-[15rem]">
+          <div className="image-container-right  w-[30%]  h-[15rem] 2xl:h-[22rem]">
             <img
               src="../../images/about-2.webp"
               className="w-full h-full object-cover"
