@@ -1,4 +1,9 @@
+import { useRef } from "react";
 import GalleryItem from "./GalleryItem";
+import {
+  useGsapGalleryImgLavitate,
+  useGsapGalleryImgUnveil,
+} from "../Hook/gsap";
 
 const data = [
   {
@@ -54,11 +59,22 @@ const data = [
 ];
 
 const Gallery = () => {
+  const galleryRef = useRef(null);
+  const itemRefs = useRef([]);
+  console.log(itemRefs);
+
+  useGsapGalleryImgUnveil(itemRefs, galleryRef);
+  useGsapGalleryImgLavitate(itemRefs, galleryRef);
+
   return (
-    <section className="container mx-auto min-h-screen ">
+    <section ref={galleryRef} className="container mx-auto min-h-screen ">
       <div className="grid-container">
-        {data.map((item) => (
-          <GalleryItem key={item.id} item={item} />
+        {data.map((item, i) => (
+          <GalleryItem
+            ref={(el) => (itemRefs.current[i] = el)}
+            key={item.id}
+            item={item}
+          />
         ))}
       </div>
     </section>

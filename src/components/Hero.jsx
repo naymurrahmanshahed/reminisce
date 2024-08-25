@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="grid grid-cols-12 min-h-[calc(100vh-179px)] grid-rows-6 font-baijamjuree uppercase text-[5.5vw] font-semibold  text-darker relative"
+      className="grid grid-cols-12 min-h-[calc(100vh-179px)] grid-rows-4 font-baijamjuree uppercase text-[5.5vw] font-semibold  text-darker relative"
     >
       <h3 className="wonder col-start-2 row-start-1">
         Wonder <span ref={shutter1}></span>
@@ -32,7 +32,7 @@ const Hero = () => {
       <h3 className="discovery col-start-6 row-start-3 ">
         Discovery <span ref={shutter2}></span>
       </h3>
-      <h3 className="magic col-start-4 row-start-5">
+      <h3 className="magic col-start-2 row-start-4">
         Magic <span ref={shutter3}></span>
       </h3>
       <div className="photos">

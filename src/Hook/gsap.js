@@ -218,3 +218,71 @@ export const useGsapAboutContentRightShutterUnveil = (item, trig) => {
     );
   }, [item, trig]);
 };
+
+export const useGsapGalleryImgUnveil = (arr, trig) => {
+  useEffect(() => {
+    const el = arr.current.map((item) => item);
+
+    gsap.fromTo(
+      el,
+      {
+        scale: 0,
+      },
+      {
+        scale: 1,
+        duration: 0.7,
+        delay: 0.5,
+        stagger: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, [arr, trig]);
+};
+
+export const useGsapGalleryImgLavitate = (arr, trig) => {
+  useEffect(() => {
+    const el = arr.current.map((item) => item);
+    gsap.fromTo(
+      el,
+      {
+        y: 0,
+      },
+      {
+        y: "-30%",
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          scrub: 1,
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, [arr, trig]);
+};
+
+export const useGsapFooterHeadline = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+    gsap.fromTo(
+      el,
+      {
+        y: "-80%",
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play ",
+        },
+      }
+    );
+  });
+};
