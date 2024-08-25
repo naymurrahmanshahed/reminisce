@@ -52,7 +52,7 @@ const Featured = () => {
       className=" min-h-screen bg-primary text-light flex overflow-x-hidden"
     >
       <div
-        className="featured-container flex w-full"
+        className="featured-container flex w-full h-full"
         // style={{ width: `calc(100vw * ${featuredSection.length})` }}
       >
         {featuredSection.map((item, index) => (
