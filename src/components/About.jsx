@@ -25,7 +25,7 @@ const About = () => {
       className="min-h-screen container mx-auto py-10 flex items-center justify-center"
     >
       <div className=" flex flex-col ">
-        <div className="about-container flex gap-10 justify-between  border-t-4 border-b-4 border-b-primary  border-t-primary">
+        <div className="about-container flex gap-10 justify-between  border-t-4 border-b-0 md:border-b-4 md:border-b-primary  border-t-primary">
           <div className="image-container-left w-[30%] h-[18rem] 2xl:h-[24rem] p-2">
             <img
               src="../../images/about-1.webp"

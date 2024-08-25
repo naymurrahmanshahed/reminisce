@@ -13,7 +13,9 @@ const Footer = () => {
       >
         Bienvenue
       </h1>
-      <p>&copy; {new Date().getFullYear()} Reminisce. Crafted by yours truly</p>
+      <p className="text-[1rem]">
+        &copy; {new Date().getFullYear()} Reminisce. Crafted by yours truly
+      </p>
     </section>
   );
 };

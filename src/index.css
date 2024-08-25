@@ -326,6 +326,21 @@ body {
     grid-column: 1;
     grid-row: 2;
   }
+
+  .image-container-left {
+    display: none;
+  }
+
+  .image-container-right {
+    display: none;
+  }
+
+  .about-content-left {
+    width: 100%;
+  }
+  .about-content-right {
+    width: 100%;
+  }
   .grid-container {
     margin: 0 auto;
     width: 100%;
