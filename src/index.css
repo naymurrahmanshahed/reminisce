@@ -382,14 +382,14 @@ body {
     height: 15rem;
     overflow: hidden;
   }
-  .image-container-left {
-    display: none;
+  .about-container-top {
+    display: flex;
+    flex-direction: column;
   }
-
-  .image-container-right {
-    display: none;
+  .about-container-bottom {
+    display: flex;
+    flex-direction: column-reverse;
   }
-
   .about-content-left {
     width: 100%;
   }

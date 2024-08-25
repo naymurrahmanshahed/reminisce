@@ -24,9 +24,9 @@ const About = () => {
       ref={featureRef}
       className="min-h-screen container mx-auto py-10 flex items-center justify-center"
     >
-      <div className=" flex flex-col ">
-        <div className="about-container flex gap-10 justify-between  border-t-4 border-b-0 md:border-b-4 md:border-b-primary  border-t-primary">
-          <div className="image-container-left w-[30%] h-[18rem] 2xl:h-[24rem] p-2">
+      <div className="about flex flex-col ">
+        <div className="about-container-top flex gap-10 justify-between  border-t-4 border-b-0 md:border-b-4 md:border-b-primary  border-t-primary">
+          <div className="image-container-left w-[100%] xl:w-[30%] h-[18rem] 2xl:h-[24rem] p-2">
             <img
               src="../../images/about-1.webp"
               className="w-full h-full object-cover"
@@ -49,7 +49,7 @@ const About = () => {
             ></span>
           </p>
         </div>
-        <div className="about-container flex justify-between border-b-4 border-b-primary ">
+        <div className="about-container-bottom flex justify-between border-b-4 border-b-primary ">
           <p className="about-content-right relative w-[66%] text-[1.5rem] text-justify">
             Growing up, life was filled with simple joys and endless
             possibilities. The days were long, and the summers even longer, as
@@ -61,7 +61,7 @@ const About = () => {
               className="about-content-right-shutter"
             ></span>
           </p>
-          <div className="image-container-right  w-[30%]  h-[18rem] 2xl:h-[24rem] p-2">
+          <div className="image-container-right w-[100%] xl:w-[30%]  h-[18rem] 2xl:h-[24rem] p-2">
             <img
               src="../../images/about-2.webp"
               className="w-full h-full object-cover"
