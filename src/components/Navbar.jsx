@@ -11,7 +11,7 @@ const Navbar = () => {
   useGsapDownStagger(liArr, 0.8);
   useGsapUpStagger(logoRef, 1.5);
   return (
-    <div className="container mx-auto navbar flex justify-between items-center font-syncopate place-items-cente py-2 text-[1.5rem]">
+    <div className="container mx-auto navbar flex justify-between items-center font-syncopate place-items-center py-2 text-[1.5rem]">
       <div className="logo" ref={logoRef}>
         <Link to="/" className="brand text-darker font-[700]">
           Reminisce
