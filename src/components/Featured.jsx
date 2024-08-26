@@ -49,7 +49,7 @@ const Featured = () => {
   return (
     <section
       ref={containerRef}
-      className=" min-h-screen bg-primary text-light flex overflow-x-hidden"
+      className=" min-h-screen bg-primary text-light flex justify-center items-center overflow-x-hidden"
     >
       <div
         className="featured-container flex w-full h-full"

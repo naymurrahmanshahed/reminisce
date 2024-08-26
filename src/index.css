@@ -390,6 +390,13 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+  .image-container-right::before {
+    display: none;
+  }
+  .image-container-left::before {
+    display: none;
+  }
+
   .about-content-left {
     width: 100%;
   }

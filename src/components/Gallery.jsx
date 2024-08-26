@@ -67,7 +67,7 @@ const Gallery = () => {
   useGsapGalleryImgLavitate(itemRefs, galleryRef);
 
   return (
-    <section ref={galleryRef} className="container mx-auto min-h-screen ">
+    <section ref={galleryRef} className="container mx-auto min-h-[60vh] ">
       <div className="grid-container">
         {data.map((item, i) => (
           <GalleryItem
